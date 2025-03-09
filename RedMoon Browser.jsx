@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { View, TextInput, Button, Switch, Picker, StyleSheet } from 'react-native';
+import { View, TextInput, Button, Switch, StyleSheet } from 'react-native';
 import { WebView } from 'react-native-webview';
+import { Picker } from '@react-native-picker/picker'; // Apenas essa importação
 
 const dnsOptions = {
   'Google Public DNS': '8.8.8.8',
