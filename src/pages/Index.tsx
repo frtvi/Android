@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { AuthScreen } from "@/components/AuthScreen";
-import { BrowserInterface } from "@/components/BrowserInterface";
+import { TaskManager } from "@/components/TaskManager";
 import { supabase } from "@/integrations/supabase/client";
 import { User, Session } from '@supabase/supabase-js';
 
@@ -36,14 +36,14 @@ const Index = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900">
-        <div className="text-white text-xl">Loading...</div>
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-50 to-blue-50">
+        <div className="text-gray-600 text-xl">Carregando...</div>
       </div>
     );
   }
 
   return user ? (
-    <BrowserInterface />
+    <TaskManager />
   ) : (
     <AuthScreen onAuthSuccess={handleAuthSuccess} />
   );

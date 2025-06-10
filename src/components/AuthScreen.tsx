@@ -33,13 +33,13 @@ export const AuthScreen = ({ onAuthSuccess }: AuthScreenProps) => {
         if (error) throw error;
         
         toast({
-          title: "Welcome back!",
-          description: "You have successfully logged in.",
+          title: "Bem-vindo de volta!",
+          description: "Login realizado com sucesso.",
         });
         onAuthSuccess();
       } else {
         if (password !== confirmPassword) {
-          throw new Error("Passwords don't match");
+          throw new Error("As senhas não coincidem");
         }
         
         const { error } = await supabase.auth.signUp({
@@ -53,14 +53,14 @@ export const AuthScreen = ({ onAuthSuccess }: AuthScreenProps) => {
         if (error) throw error;
         
         toast({
-          title: "Account created!",
-          description: "Please check your email to verify your account.",
+          title: "Conta criada!",
+          description: "Verifique seu email para confirmar a conta.",
         });
       }
     } catch (error: any) {
       toast({
-        title: "Error",
-        description: error.message || "An error occurred",
+        title: "Erro",
+        description: error.message || "Ocorreu um erro",
         variant: "destructive",
       });
     } finally {
@@ -69,74 +69,75 @@ export const AuthScreen = ({ onAuthSuccess }: AuthScreenProps) => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 flex items-center justify-center p-4">
-      <Card className="w-full max-w-md bg-white/10 backdrop-blur-lg border-white/20 text-white">
-        <CardHeader className="text-center">
-          <CardTitle className="text-2xl font-bold">
-            🌐 Mobile Browser
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 flex items-center justify-center p-4">
+      <Card className="w-full max-w-md bg-white shadow-xl border-0">
+        <CardHeader className="text-center pb-6">
+          <div className="mb-4 text-6xl">🔴</div>
+          <CardTitle className="text-2xl font-bold text-gray-800">
+            RedTasker
           </CardTitle>
-          <CardDescription className="text-white/80">
-            {isLogin ? "Sign in to continue" : "Create your account"}
+          <CardDescription className="text-gray-600">
+            {isLogin ? "Entre na sua conta" : "Crie sua conta"}
           </CardDescription>
         </CardHeader>
-        <CardContent>
+        <CardContent className="px-6 pb-6">
           <form onSubmit={handleAuth} className="space-y-4">
             <div>
-              <Label htmlFor="email" className="text-white">Email</Label>
+              <Label htmlFor="email" className="text-gray-700">Email</Label>
               <Input
                 id="email"
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="bg-white/20 border-white/30 text-white placeholder:text-white/60"
-                placeholder="Enter your email"
+                className="mt-1"
+                placeholder="Digite seu email"
               />
             </div>
             <div>
-              <Label htmlFor="password" className="text-white">Password</Label>
+              <Label htmlFor="password" className="text-gray-700">Senha</Label>
               <Input
                 id="password"
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
-                className="bg-white/20 border-white/30 text-white placeholder:text-white/60"
-                placeholder="Enter your password"
+                className="mt-1"
+                placeholder="Digite sua senha"
               />
             </div>
             {!isLogin && (
               <div>
-                <Label htmlFor="confirmPassword" className="text-white">Confirm Password</Label>
+                <Label htmlFor="confirmPassword" className="text-gray-700">Confirmar Senha</Label>
                 <Input
                   id="confirmPassword"
                   type="password"
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
                   required
-                  className="bg-white/20 border-white/30 text-white placeholder:text-white/60"
-                  placeholder="Confirm your password"
+                  className="mt-1"
+                  placeholder="Confirme sua senha"
                 />
               </div>
             )}
             <Button
               type="submit"
               disabled={loading}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+              className="w-full bg-purple-600 hover:bg-purple-700 text-white py-2.5"
             >
-              {loading ? "Loading..." : (isLogin ? "Sign In" : "Sign Up")}
+              {loading ? "Carregando..." : (isLogin ? "Entrar" : "Criar Conta")}
             </Button>
           </form>
           <div className="mt-6 text-center">
-            <p className="text-white/80">
-              {isLogin ? "Don't have an account?" : "Already have an account?"}
+            <p className="text-gray-600">
+              {isLogin ? "Não tem uma conta?" : "Já tem uma conta?"}
             </p>
             <Button
               variant="link"
               onClick={() => setIsLogin(!isLogin)}
-              className="text-blue-300 hover:text-blue-200 p-0"
+              className="text-purple-600 hover:text-purple-700 p-0 mt-1"
             >
-              {isLogin ? "Register now" : "Sign in instead"}
+              {isLogin ? "Criar conta agora" : "Fazer login"}
             </Button>
           </div>
         </CardContent>
