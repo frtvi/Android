@@ -26,8 +26,8 @@
 
 ## 👥 Integrantes do Projeto
 
-- **Victor Augusto Lima Barbosa**  
-- **João Henrique Augait Do Nascimento**  
-- **André Ribeiro Xavier**
+- **Victor Augusto Lima Barbosa**  RA: 202202209236
+- **João Henrique Augait Do Nascimento**  RA: 202202782671
+- **André Ribeiro Xavier**  RA: 202303822103
 
 ---
