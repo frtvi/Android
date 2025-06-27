@@ -69,7 +69,7 @@ Download APK: https://github.com/frtvi/Android/releases/tag/1.1.0
 
 ## 🚀 Execute o projeto:
 Abra o LD Player e arraste o .apk até a tela inicial:<br>
-![LDPlayer](Imagens/print ldplayer.png)
+![LDPlayer]([Imagens/print ldplayer.png](https://github.com/frtvi/Android/blob/main/Imagens/print%20ldplayer.png))
 
 Clique no ícone e execute o projeto!
 
