@@ -78,8 +78,8 @@ Clique no ícone e execute o projeto!
 Tela 1: Login
 ![Login](Imagens/login.png)<br>
 
-Tela 2: Criação de usuário
-![User](Imagens/criacao usuario.png)<br>
+Tela 2: Criação de usuário  
+![User](Imagens/criacao usuario.png)
 
-Tela 4: Tela Principal
-![Principal](Imagens/tela principal.png)<br>
+Tela 4: Tela Principal  
+![Principal](Imagens/tela principal.png)
