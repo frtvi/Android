@@ -76,10 +76,10 @@ Clique no ícone e execute o projeto!
 ## Telas do projeto
 
 Tela 1: Login
-![LDPlayer](Imagens/login.png)
+![LDPlayer](Imagens/login.png)<br>
 
 Tela 2: Criação de usuário
-![LDPlayer](Imagens/criacao usuario.png)
+![LDPlayer](Imagens/criacao usuario.png)<br>
 
 Tela 4: Tela Principal
-![LDPlayer](Imagens/tela principal.png)
+![LDPlayer](Imagens/tela principal.png)<br>
