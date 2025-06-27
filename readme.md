@@ -10,10 +10,10 @@ André Ribeiro Xavier RA: 202303822103<br>
 ## Sumário
 
 1. Requisitos<br>
-2. Configuração de acesso aos dados<br>
-3. Estrutura do projeto<br>
-4. Instale os requisitos do projeto<br>
-5. Executando o projeto<br>
+2. Estrutura do projeto<br>
+3. Tabela utilizada para autenticação<br>
+4. Requisitos<br>
+5. Execute o projeto<br>
 6. Telas do projeto<br>
 
 
