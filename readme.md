@@ -1,33 +1,85 @@
-#  RedTasker
+# RedTasker
 
-**RedTasker** é um gerenciador de tarefas simples e prático, desenvolvido em **React Native** com backend utilizando **Supabase**. O app permite que usuários se cadastrem, façam login e gerenciem suas tarefas com facilidade — incluindo adicionar, remover e marcar como concluídas. <br>
+RedTasker é um gerenciador de tarefas simples e prático, desenvolvido em React Native com backend utilizando Supabase. O app permite que usuários se cadastrem, façam login e gerenciem suas tarefas com facilidade — incluindo adicionar, remover e marcar como concluídas.
+## Equipe do projeto
 
-### <b>Caso haja dificuldade em rodar o aplicativo via android studio/expo, sugerimos instalar o .apk e rodar em emulador (Sugestão: LDPlayer) ou no próprio smartphone.</b>
+Victor Augusto Lima Barbosa RA: 202202209236<br>
+João Henrique Augait Do Nascimento RA: 202202782671<br>
+André Ribeiro Xavier RA: 202303822103<br>
 
----
+## Sumário
 
-##  Funcionalidades
+1. Requisitos<br>
+2. Configuração de acesso aos dados<br>
+3. Estrutura do projeto<br>
+4. Instale os requisitos do projeto<br>
+5. Executando o projeto<br>
+6. Telas do projeto<br>
 
--  **Autenticação de usuários com Supabase**
--  **Criação de contas**
--  **Adição de tarefas**
--  **Remoção de tarefas**
--  **Marcar tarefas como concluídas**
 
----
+## 🔧 Requisitos:
 
-## 🛠 Tecnologias Utilizadas
+ - Emulador Android (Sugestão: LD Player https://pt.ldplayer.net/) ou dispositivo Android.<br>
+ - APK do RedTasker
 
-- **[React Native](https://reactnative.dev/)** — Interface mobile nativa
-- **[Supabase](https://supabase.com/)** — Autenticação e banco de dados
+### 🗃️ Tabela 'usuarios' com os seguintes campos:
+```
+UID: UUID or int (primary key)
+email : varchar
+password: varchar
+```
 
----
----
+## 🔐 Configuração de acesso ao banco de dados
+```
+DATABASE_URL=https://ijspzmyvcwpgujrkiimc.supabase.co
+DATABASE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imlqc3B6bXl2Y3dwZ3VqcmtpaW1jIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDgzODcwMzUsImV4cCI6MjA2Mzk2MzAzNX0.UK9s3yCXDtf6dTqPJLrIgtalhULtUiN7Vio91MoDwEI
+```
 
-## 👥 Integrantes do Projeto
+## 📁 Estrutura do projeto:
+```
+RedTasker/
+├── Apresentação
+│   └── apresentacao.pdf
+├── Documentação
+│   ├── 01_cartaDeApresentacao.pdf
+│   ├── 02_cartaDeAutorizacao.pdf
+│   ├── 03_declaracaoDeUsoDeDadosPublicos.pdf
+│   └── 04_roteiroDeExtensao.pdf
+├── frontend
+│   ├── app
+│   ├── pages
+│   ├── App.tsx
+│   ├── AuthScreen.tsx
+│   └── main.tsx
+├── backend
+│   ├── integrations/supabase
+│   └── supabase
+├── video
+│   └── video.txt
+└── readme.md 
+```
 
-- **Victor Augusto Lima Barbosa**  RA: 202202209236
-- **João Henrique Augait Do Nascimento**  RA: 202202782671
-- **André Ribeiro Xavier**  RA: 202303822103
+## 📦 Instale os requisitos do projeto:
+```
+Download LD Player: https://pt.ldplayer.net/
 
----
+Download APK: https://github.com/frtvi/Android/releases/tag/1.1.0
+
+```
+
+## 🚀 Execute o projeto:
+Abra o LD Player e arraste o .apk até a tela inicial:<br>
+![LDPlayer](Imagens/print ldplayer.png)
+
+Clique no ícone e execute o projeto!
+
+## Telas do projeto
+
+Tela 1: Login
+![LDPlayer](Imagens/login.png)
+
+Tela 2: Criação de usuário
+![LDPlayer](Imagens/criacao usuario.png)
+
+Tela 4: Tela Principal
+![LDPlayer](Imagens/tela principal.png)
