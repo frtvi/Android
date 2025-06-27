@@ -68,15 +68,15 @@ Download APK: https://github.com/frtvi/Android/releases/tag/1.1.0
 ```
 
 ## 🚀 Execute o projeto:
-Abra o LD Player e arraste o .apk até a tela inicial:<br>
-![LDPlayer]([Imagens/print ldplayer.png](https://github.com/frtvi/Android/blob/main/Imagens/print%20ldplayer.png))
+Abra o LD Player e arraste o .apk até a tela inicial:  
+![LDPlayer](Imagens/print ldplayer.png)
 
 Clique no ícone e execute o projeto!
 
 ## Telas do projeto
 
-Tela 1: Login
-![Login](Imagens/login.png)<br>
+Tela 1: Login  
+![Login](Imagens/login.png)
 
 Tela 2: Criação de usuário  
 ![User](Imagens/criacao usuario.png)
